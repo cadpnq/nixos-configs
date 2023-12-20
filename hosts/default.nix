@@ -15,7 +15,6 @@
         home-manager.nixosModules.home-manager {
           home-manager.users.nick.imports = homeImports.nick;
         }
-        # {home-manager.users.nick.imports = homeImports.nick;}
       ];
     };
   };
