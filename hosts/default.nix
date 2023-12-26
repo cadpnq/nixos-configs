@@ -17,5 +17,15 @@
         }
       ];
     };
+    vm = nixosSystem {
+      modules = [
+        ../modules
+        ./vm
+        ../users/nick
+        home-manager.nixosModules.home-manager {
+          home-manager.users.nick.imports = homeImports.nick;
+        }
+      ];
+    };
   };
 }
