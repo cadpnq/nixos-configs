@@ -10,6 +10,7 @@
     ntp2 = nixosSystem {
       modules = [
         ../modules
+        ../modules/gnome.nix
         ./ntp2
         ../users/nick
         home-manager.nixosModules.home-manager {
@@ -20,6 +21,7 @@
     vm = nixosSystem {
       modules = [
         ../modules
+        ../modules/gnome.nix
         ./vm
         ../users/nick
         home-manager.nixosModules.home-manager {
