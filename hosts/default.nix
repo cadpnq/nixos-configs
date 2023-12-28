@@ -22,6 +22,7 @@
       modules = [
         ../modules
         ../modules/gnome.nix
+        ../modules/theme.nix
         ./vm
         ../users/nick
         home-manager.nixosModules.home-manager {
