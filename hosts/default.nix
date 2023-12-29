@@ -20,6 +20,7 @@
     };
     vm = nixosSystem {
       modules = [
+        inputs.stylix.nixosModules.stylix
         ../modules
         ../modules/gnome.nix
         ../modules/theme.nix
