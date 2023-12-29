@@ -9,8 +9,10 @@
   in {
     ntp2 = nixosSystem {
       modules = [
+        inputs.stylix.nixosModules.stylix
         ../modules
         ../modules/gnome.nix
+        ../modules/theme.nix
         ./ntp2
         ../users/nick
         home-manager.nixosModules.home-manager {
