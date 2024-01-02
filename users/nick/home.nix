@@ -38,4 +38,10 @@
       plugins = [ ];
     };    
   };
+
+  programs.starship = {
+    enable = true;
+    settings = {
+    };
+  };
 }
