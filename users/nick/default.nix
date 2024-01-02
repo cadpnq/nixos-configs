@@ -4,6 +4,7 @@ inputs@{ config, pkgs, lib, self, ... }:
     isNormalUser = true;
     description = "nick";
     extraGroups = [ "wheel" "networkmanager" ];
+    shell = pkgs.zsh;
   };
   
   time.timeZone = "America/New_York";
